@@ -9,7 +9,7 @@ const Header = () => {
         color: "#212529",  
         boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",  
         padding: "8px 20px"
-    }
+    };
     const activeStyleTop={
         fontWeight: "bold", 
         color: "white",  
@@ -31,7 +31,7 @@ const Header = () => {
                 <Col className=" d-flex justify-content-lg-end justify-content-md-end justify-content-sm-center justify-content-center" xs={12} md={6} lg={6}>
                     <Link 
                             className="menu-text text-light"
-                            activeStyle={activeStyleTop} to="/login"><i class="far fa-user pe-2 signIn-hr1"></i>Login
+                            activeStyle={activeStyleTop} to="/login"><i className="far fa-user pe-2 signIn-hr1"></i>Login
                     </Link>
                 </Col>
             </Row>
