@@ -6,10 +6,19 @@ import useAuth from '../../hooks/useAuth';
 const AddServices = () => {
     const {user} = useAuth()
 
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const onSubmit = data => {
+    const { register, handleSubmit, formState: { errors } } = useForm();
+   
+    const onSubmit = (data) => {
+        data.email = user?.email;
+        fetch("http://localhost:5000/addServices", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify(data),
+        })
+          .then((res) => res.json())
+          .then((result) => console.log(result));
         console.log(data);
-    }
+    };
 
     return (
         <div>
@@ -31,7 +40,7 @@ const AddServices = () => {
                     />
                     <br />
                     <input 
-                        type="number" {...register("age", { min: 18, max: 99 })}
+                        type="number" {...register("price")}
                         placeholder="Price"
                         className="p-2 m-2 w-100"
                     />
