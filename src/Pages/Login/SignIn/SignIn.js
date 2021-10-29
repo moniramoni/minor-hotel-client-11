@@ -2,8 +2,10 @@ import React from 'react';
 import './SignIn.css'
 import { Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 
 const SignIn = () => {
+    const {signInUsingGoogle} = useAuth()
     return (
         <div>
             <div className="login-section align-items-center">
@@ -18,7 +20,7 @@ const SignIn = () => {
                     <Col xs={12} md={6} lg={3} className=" text-light signIn-info text-start p-5">
                         <h5 className="pt-3">SignIn via Google</h5>
                         <hr className="w-25 mb-4 signIn-hr2"/>
-                        <Link><button className="px-5 py-2 border-0 fs-4 fw-bold">Google</button></Link>
+                        <button onClick={signInUsingGoogle} className="px-5 py-2 border-0 fs-4 fw-bold">Google</button>
                     </Col>
                     <Col xs={12} md={6} lg={3} className="">
                     </Col>
