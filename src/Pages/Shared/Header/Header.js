@@ -5,7 +5,9 @@ import useAuth from '../../../hooks/useAuth';
 import './Header.css';
 
 const Header = () => {
+
     const {user, logOut} = useAuth();
+
     const activeStyle={
         fontWeight: "bold", 
         color: "#212529",  
@@ -61,6 +63,10 @@ const Header = () => {
                         <NavLink 
                             className="menu-text"
                             activeStyle={activeStyle} to="/home">Home
+                        </NavLink>
+                        <NavLink 
+                            className="menu-text"
+                            activeStyle={activeStyle} to="/addServices">Add Services
                         </NavLink>
                         <NavLink
                         className="menu-text"

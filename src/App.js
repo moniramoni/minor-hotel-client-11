@@ -7,7 +7,8 @@ import Footer from './Pages/Shared/Footer/Footer';
 import NotFound from './Pages/NotFound/NotFound';
 import SignIn from './Pages/Login/SignIn/SignIn';
 import AuthProvider from './contexts/AuthProvider';
-import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+// import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import AddServices from './Pages/AddServices/AddServices';
 
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
             </Route>
             <Route path="/home">
                 <Home></Home>
+            </Route>
+            <Route path="/addServices">
+                <AddServices></AddServices>
             </Route>
             <Route path="/login">
                 <SignIn></SignIn>
