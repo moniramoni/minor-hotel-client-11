@@ -4,7 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
+-Minor Hotels is an international hotel owner, operator and investor with more than 550 hotels in 55 countries across Asia Pacific, Middle East, Africa, the Indian Ocean, Europe and the Americas. The hotel group operates as a subsidiary of Minor International PCL, one of the largest hospitality and leisure companies in the Asia Pacific region. The group operates hotels under the brands of Anantara Hotels, Resorts & Spas, Avani Hotels & Resorts, NH Hotels, NH Collection, nhow Hotels, Tivoli Hotels & Resorts, Oaks Hotels & Resorts and Elewana Collection.
+
+
 
 ### `npm start`
 

@@ -1,0 +1,10 @@
+.bg-image{
+    background-image: url("https://i.ibb.co/TkFT6X1/3d-Render-Astronaut-Holding-Question-Mark-Sitting-on-Sofa-Mockup-3d-illustration-Design.jpg");
+    width: 100%;
+    height: 750px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0px 50px 0px;
+}

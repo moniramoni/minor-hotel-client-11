@@ -1,0 +1,30 @@
+.footer-container{
+    background-image: url("https://i.ibb.co/ZY4Jr2q/footer-top-bg.png");
+}
+.footer-logo{
+    -webkit-filter: invert(100%); 
+    filter: invert(100%);
+    width: 40%;
+    height: 60%;
+}
+
+.footer-menu li{
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 20px;
+    color: rgba(255, 255, 255, 0.781);
+    font-size: 15px;
+}
+.footer-menu li:hover{
+    color: #0cb8b6;
+}
+.footer-icon li{
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 20px;
+    color: #0cb8b6;
+    font-size: 19px;
+}
+.footer-icon li:hover{
+    color: white;
+}

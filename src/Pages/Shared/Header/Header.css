@@ -1,0 +1,52 @@
+/* top part start */
+.top-bar{
+    background-color: #212529;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-image: url("https://i.ibb.co/ZY4Jr2q/footer-top-bg.png");
+}
+.footer-icon li{
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 20px;
+    color: #a37a3f;
+    font-size: 18px;
+}
+.footer-icon li:hover{
+    color: white;
+}
+
+
+/* .............top part end........... */
+
+.lg{
+    color: #3e3e3e;
+}
+.header-navbar{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-bottom: 2px solid #a37a3f;
+}
+.logo-container{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+.menu-text{
+    color: #a37a3f;
+    outline: none;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 20px;
+}
+.menu-text:hover{
+    color: #212529;
+}
+.logout-btn{
+    background-color: #212529;
+
+}
+.profile-img{
+    width:15%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+

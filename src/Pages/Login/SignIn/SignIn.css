@@ -1,0 +1,19 @@
+.signIn-info{
+    background-color: #a37a3f;
+}
+.signIn-hr1 {
+    color: #a37a3f;
+    padding: 0.08em;
+
+}
+.signIn-hr2 {
+    background-color: white;
+    padding: 0.08em;
+
+}
+.signIn-info button{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.login-section{
+    padding: 100px 0px;
+}
