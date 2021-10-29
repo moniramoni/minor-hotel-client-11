@@ -25,7 +25,6 @@ const Footer = () => {
                     </div>
                     <p className="fw-light text-lg-end hour text-white "> Monday - Thursday / 8:00 - 16:00</p>
                     <p className="fw-light text-lg-end hour text-white "> Friday - Saturday / 8:00 - 16:00</p>
-                    <p className="fw-light text-lg-end hour text-white "> Sunday / 8:00 - 16:00</p>
                 </div>
             </Col>
             <Col className=" d-flex justify-content-lg-end justify-content-md-end justify-content-sm-center justify-content-center" xs={12} md={6} lg={4}>
@@ -34,7 +33,6 @@ const Footer = () => {
                     <div className="d-flex justify-content-lg-end text-end justify-content-md-center justify-content-sm-center justify-content-center">
                         <hr className="text-white w-75 m-1 " />
                     </div>
-                    <p className="fw-light text-lg-end number text-white justify-content-md-end justify-content-sm-center justify-content-center "> <i className="fas fa-phone me-1"></i> 0 800 123 000 00</p>
                     <p className="fw-light text-lg-end number text-white justify-content-md-end justify-content-sm-center justify-content-center "> <i className="fas fa-map-marker-alt"></i> 30 Hampton Road Southampton</p>
                     <p className="fw-light text-lg-end number text-white justify-content-md-end justify-content-sm-center justify-content-center "> <i className="far fa-envelope-open"></i> info@redonionfood.com</p>
                 </div>
@@ -45,7 +43,7 @@ const Footer = () => {
         <hr className="container bg-light" />
 
         {/*------------- footer bottom part  start-----------*/}
-         <Row className="footer-botttom-row container m-auto py-2 ">
+         <Row className="footer-bottom-row container m-auto py-2 ">
             <Col className=" d-flex justify-content-lg-start justify-content-md-start justify-content-sm-center justify-content-center" xs={12} md={6} lg={6}>
                 <ul className="footer-menu text-white d-flex justify-content-sm-center ">
                     <li>Contact</li>

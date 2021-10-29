@@ -16,14 +16,14 @@
     font-size: 15px;
 }
 .footer-menu li:hover{
-    color: #0cb8b6;
+    color: #a37a3f;
 }
 .footer-icon li{
     text-decoration: none;
     list-style-type: none;
     margin-right: 20px;
-    color: #0cb8b6;
-    font-size: 19px;
+    color: #a37a3f;
+    font-size: 18px;
 }
 .footer-icon li:hover{
     color: white;
