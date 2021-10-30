@@ -1,0 +1,48 @@
+.color{
+    color: #a37a3f;
+}
+.about-image{
+    background-image: linear-gradient(90deg, white 50%, #0cb8b6 50%);
+    width: 95%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 50px 50px 50px;
+    justify-content: end;
+}
+.about-tag{
+    width: 60%;
+    text-align:center;
+    padding: 10px 10px 2px 10px;
+    border-radius: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: 15px;
+}
+p{
+    font-family: Helvetica, sans-serif;
+    letter-spacing: 0.02em;
+}
+.fa-check, .fa-history{
+    color: #0cb8b6;
+    text-align: left;
+    font-size: 10px;
+    border: 1px solid #f36438;
+    border-radius: 50%;
+    padding: 8px;
+}
+.fa-user-md, .fa-stethoscope{
+    color: white;
+    background-color:#0cb8b6 ;
+    text-align: left;
+    font-size: 50px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.fa-user-md:hover ,.fa-stethoscope:hover{
+    color: #0cb8b6;
+    background-color:white ;
+    box-shadow: hsl(14, 89%, 59%), #f36438;
+
+}

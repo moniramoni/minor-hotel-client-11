@@ -22,7 +22,7 @@ const AddServices = () => {
 
     return (
         <div>
-            <h1 className="mt-5 text-center text-dark">Add Services</h1>
+            <h1 className="mt-5 text-center text-dark">Add More Service on Homepage</h1>
             <div className="login-box w-50 m-auto my-5">
                 <div className="event-box border border d-flex justify-content-center align-items-center">
                 <div className="login-form py-5 w-75">

@@ -66,6 +66,10 @@ const Header = () => {
                         </NavLink>
                         <NavLink 
                             className="menu-text"
+                            activeStyle={activeStyle} to="/placeOrder">Place Order
+                        </NavLink>
+                        <NavLink 
+                            className="menu-text"
                             activeStyle={activeStyle} to="/addServices">Add Services
                         </NavLink>
                         <NavLink

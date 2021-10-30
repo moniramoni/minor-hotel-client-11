@@ -9,6 +9,7 @@ import SignIn from './Pages/Login/SignIn/SignIn';
 import AuthProvider from './contexts/AuthProvider';
 // import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import AddServices from './Pages/AddServices/AddServices';
+import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
 
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
             </Route>
             <Route path="/home">
                 <Home></Home>
+            </Route>
+            <Route path="/placeOrder/:serviceId">
+                <PlaceOrder></PlaceOrder>
             </Route>
             <Route path="/addServices">
                 <AddServices></AddServices>
