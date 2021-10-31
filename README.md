@@ -30,5 +30,7 @@
 - Heroku Hosting ( Server Side )
 
 ![Minor-Hotel](https://user-images.githubusercontent.com/86655543/139593880-4d7abafc-ca38-4822-89d4-77b55b4a2be1.png)
+![Minor-Hotel (1)](https://user-images.githubusercontent.com/86655543/139594105-0c73e8ac-c02b-4c8c-b198-197380123e2a.png)
+![Minor-Hotel (2)](https://user-images.githubusercontent.com/86655543/139594118-3959f81f-dcf6-4c3b-a19f-4f2855ae254a.png)
 
 ![]()
