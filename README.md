@@ -25,5 +25,9 @@
 
 - Mongodb Database 
 
+- Firebase Hosting ( Client Side )
+
+- Heroku Hosting ( Server Side )
+
 
 ![]()
