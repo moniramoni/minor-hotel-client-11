@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import './MyOrder.css';
 
@@ -8,6 +7,7 @@ const MyOrder = () => {
     const {user} = useAuth()
     const [myOrders, setMyOrders] = useState([])
     console.log(myOrders)
+    const [isDeleted, setIsDeleted] = useState({})
 
 
     useEffect(() => {
@@ -15,7 +15,29 @@ const MyOrder = () => {
         .then(res => res.json())
         .then(result => setMyOrders(result))
 
-    }, [user.email])
+    }, [user.email, isDeleted])
+
+
+    const handleDeleteMyOrders = (id) => {
+        fetch(`http://localhost:5000/deleteMyOrders/${id}`,{
+            method: "DELETE",
+            headers: {"content-type": "application/json"}
+        })
+        .then(res => res.json())
+        .then(result => {
+            if(result.deletedCount){
+                setIsDeleted(true);
+                alert('Are sure you want to Delete?')
+            }
+            else{
+                setIsDeleted(false);
+            }
+        })
+        
+        console.log(id)
+    }
+
+
     return (
         <div>
             <div className="m-auto mb-5 p-5 bg-dark text-light">
@@ -52,7 +74,9 @@ const MyOrder = () => {
                                 <div className="text-start p-3">
                                     <h6 className="">Capacity: {order.singleServiceDat.singleService.category} Bed</h6>
                                     <h6 className="">Per Night: ${order.singleServiceDat.singleService.price}</h6>
-                                    <Link to={`/placeOrder/${order.singleServiceDat.singleService._id}`}><button>Book Now</button></Link>
+                                    <h6 className="">Booked Status: {order.status}</h6>
+                                    <button onClick={() => handleDeleteMyOrders(order._id)}>Delete</button>
+                                    {/* <Link to={`/placeOrder/${order.singleServiceDat.singleService._id}`}><button>Delete</button></Link> */}
                                 </div>
                             </div>
                         </div>

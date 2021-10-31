@@ -1,15 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Spinner } from 'react-bootstrap';
 
 const Services = () => {
     const [services, setServices] = useState([])
+    const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
+        setIsLoading(true)
         fetch(`https://mysterious-island-82371.herokuapp.com/addServices`)
         .then(res => res.json())
         .then(result => setServices(result))
+        setIsLoading(false)
+    }, [isLoading])
 
-    }, [])
+    if(isLoading){
+        return <Spinner animation="border" role="status">
+        <span className="visually-hidden">Loading...</span>
+      </Spinner>
+    }
 
     return (
         <div>

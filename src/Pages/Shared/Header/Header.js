@@ -27,10 +27,6 @@ const Header = () => {
                     </ul>
                 </Col>
                 <Col className=" d-flex justify-content-lg-end justify-content-md-end justify-content-sm-center justify-content-center" xs={12} md={6} lg={6}>
-                    {/* <Link 
-                            className="menu-text text-light"
-                            activeStyle={activeStyleTop} to="/login"><i className="far fa-user pe-2 signIn-hr1"></i>Login
-                    </Link> */}
                      <Navbar.Text className="">
                         <img className="profile-img" src={user?.photoURL} alt="" />
                         <a className="profile-name" href="/login">{user?.displayName}</a>
@@ -60,22 +56,18 @@ const Header = () => {
                     </Link>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
-                        <NavLink 
-                            className="menu-text"
+                                               
+                        <NavLink className="menu-text"
                             activeStyle={activeStyle} to="/home">Home
                         </NavLink>
-                        <NavLink 
-                            className="menu-text"
+                        <NavLink className="menu-text"
                             activeStyle={activeStyle} to="/myOrder">My Order
                         </NavLink>
-                        <NavLink 
-                            className="menu-text"
+                        <NavLink className="menu-text"
                             activeStyle={activeStyle} to="/manageOrders">Manage Orders
                         </NavLink>
-                        <NavLink
-                        className="menu-text"
-                        activeStyle={activeStyle}
-                         as={Link}to="/blogs">Blogs</NavLink>
+                        <NavLink className="menu-text" activeStyle={activeStyle} as={Link}to="/addServices">Add Service</NavLink>
+
                         <NavLink
                         className="menu-text"
                         activeStyle={activeStyle}

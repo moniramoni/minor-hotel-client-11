@@ -11,6 +11,7 @@ const SignIn = () => {
     const redirect_uri = location.state?.from || '/home';
 
     const googleLoginRedirect = () => {
+        
         signInUsingGoogle()
         .then(result => {
             setUser(result.user)
