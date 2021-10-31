@@ -28,7 +28,7 @@ const Services = () => {
                                     <img className="w-100" src={service.image} alt="" />
                                 </div>
                                 <div className="text-start border-bottom">
-                                    <h4 className="p-2 px-3">{service.title}</h4>
+                                    <h4 className="p-2 px-3">{service.title.slice(0, 23)}</h4>
                                     <p className="p-2 px-3">{service.description.slice(0, 100)}...</p>
                                 </div>
                                 <div className="text-start p-3">

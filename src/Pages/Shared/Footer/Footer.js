@@ -7,8 +7,8 @@ const Footer = () => {
         <div className="footer-container bg-dark">
 
         {/* ------------- footer top part start ------------- */}
-         <Row className="container m-auto my-0 pt-5 py-4 d-md-flex">
-            <Col className="text-start justify-content-lg-start justify-content-md-start justify-content-sm-center justify-content-center" xs={12} md={6} lg={4}>
+         <Row className="container m-auto my-0 pt-5 pb-1 d-md-flex">
+            <Col className="text-center justify-content-lg-start justify-content-md-start justify-content-sm-center justify-content-center" xs={12} md={6} lg={4}>
                 <img
                     src="https://i.ibb.co/n0JNFyC/logo.png"
                     width="240"

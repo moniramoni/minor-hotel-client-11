@@ -75,14 +75,7 @@ const Header = () => {
                         className="menu-text"
                         activeStyle={activeStyle}
                          as={Link}to="/aboutUs">About Us</NavLink>
-                        {/* {user?.email? 
-                        <Button className="logout-btn mx-2" onClick={logOut} variant="">LogOut</Button>:
-                            <Nav.Link
-                            className="menu-text"
-                            activeStyle={activeStyle} as={Link}to="/signIn">Login</Nav.Link>} */}
                     <Navbar.Text className="menu-text">
-                        {/* <img className="profile-img" src={user?.photoURL} alt="" /> */}
-                        {/* <a href="/login">{user?.displayName}</a> */}
                     </Navbar.Text>
                 </Navbar.Collapse>
             </Container>

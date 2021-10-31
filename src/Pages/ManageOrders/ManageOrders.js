@@ -2,11 +2,6 @@ import React, { useEffect, useState } from 'react';
 
 const ManageOrders = () => {
     const [manageOrders, setManageOrders] = useState([])
-    // const [isDeleted, setIsDeleted] = useState(null)
-    // const [approve, setApprove] = useState('Pending')
-    // const [isUpdate, setIsUpdate] = useState(null)
-    // console.log(isDeleted)
-
 
     useEffect(() => {
         fetch("https://mysterious-island-82371.herokuapp.com/manageOrders")
@@ -65,19 +60,19 @@ const ManageOrders = () => {
 
     return (
         <div>
-            <div className="text-center mt-5">
-                <h1 className="my-5">All Booked Room Is Here</h1>
+            <div className="text-center">
+                <h1 className="bg-dark mb-5 text-light py-4">All Booked Room Is Here</h1>
             </div>
-            <div className="m-auto mb-5">
+            <div className="m-auto mb-5 pt-5">
                 <div className="row container  m-auto">
                     {manageOrders?.map((manageOrder) => (
-                        <div className="col-md-4" key= {manageOrder._id}>
+                        <div className="col-lg-4 col-md-6 col-12" key= {manageOrder._id}>
                             <div className="border mb-4">
                                 <div className="">
                                     <img className="w-100" src={manageOrder.singleServiceDat.singleService.image} alt="" />
                                 </div>
                                 <div className="text-start border-bottom">
-                                    <h4 className="p-2 px-3">{manageOrder.singleServiceDat.singleService.title}</h4>
+                                    <h4 className="p-2 px-3">{manageOrder.singleServiceDat.singleService.title.slice(0, 23)}</h4>
                                     <p className="p-2 px-3">{manageOrder.singleServiceDat.singleService.description.slice(0, 100)}...</p>
                                 </div>
                                 <div className="text-start p-3">
@@ -86,13 +81,12 @@ const ManageOrders = () => {
 
                                     <h6 className="">Per Night: ${manageOrder.singleServiceDat.singleService.price}</h6>
 
-                                    {/* <h6 onClick={() => setApprove("Approved")} className="">Approve</h6> */}
 
                                     {/* approve btn */}
                                     <button onClick={() => handleUpdateManageOrders(manageOrder._id)} className="px-4 mx-1 py-1 my-2">{manageOrder.status}</button>
 
                                     {/* delete btn */}
-                                    <button onClick={() => handleDeleteManageOrders(manageOrder._id)} className="px-5 py-1 my-2">Delete</button>
+                                    <button onClick={() => handleDeleteManageOrders(manageOrder._id)} className="px-4 py-1 my-2">Delete</button>
                                 </div>
                             </div>
                         </div>

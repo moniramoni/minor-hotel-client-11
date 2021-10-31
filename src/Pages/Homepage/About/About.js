@@ -9,12 +9,12 @@ const About = () => {
                 <div className="about p-0 p-md-5 p-lg-4 p-sm-0">
                     <Container className="w-100">
                     <h1 className="mb-lg-5 mb-5 mb-0 mb-sm-0">Our Hotel</h1>
-                        <Row className="w-100 pt-2" >
+                        <Row className="w-100 pt-3" >
                             {/* -------------column first part------- */}
                             <Col xs={12} md={12} lg={6}>
                                 <div>
                                     <h6 className="fs-2 fw-normal text-start py-4 ">Minor Hotel Facilities</h6>
-                                    <p className="fw-light text-start d-md-none d-lg-block">The mission of the Minor Hotel is to put hospitality services on the highest level in order to satisfy the demands and expectations of guests. Our aim is to make the Hotel Grand a place for encounters.</p>
+                                    <p className="fw-light text-start d-md-none d-lg-block pb-3">The mission of the Minor Hotel is to put hospitality services on the highest level in order to satisfy the demands and expectations of guests. Our aim is to make the Hotel Grand a place for encounters.</p>
                                     <div>
                                         {/* -------- Facilities  row 1 ----------- */}
                                         <Row className="w-100 m-auto justify-content-start align-items-center py-1">
@@ -28,7 +28,7 @@ const About = () => {
                                                 </div>
                                             </Col>
                                             <Col xs={12} md={6} lg={6} className="p-2 p-md-0 p-lg-0 p-sm-2">
-                                                <div className="recovery-story d-flex ps-3">
+                                                <div className="recovery-story d-flex">
                                                     <div className="">
                                                     <i className="fas fa-biking color fs-5"></i></div>
                                                     <div>
@@ -49,7 +49,7 @@ const About = () => {
                                                 </div>
                                             </Col>
                                             <Col xs={12} md={6} lg={6} className="p-2 p-md-0 p-lg-0 p-sm-2">
-                                                <div className="recovery-story d-flex ps-3">
+                                                <div className="recovery-story d-flex">
                                                     <div className="">
                                                     <i className="fas fa-glass-martini-alt color fs-5"></i></div>
                                                     <div>
@@ -70,7 +70,7 @@ const About = () => {
                                                 </div>
                                             </Col>
                                             <Col xs={12} md={6} lg={6} className="p-2 p-md-0 p-lg-0 p-sm-2">
-                                                <div className="recovery-story d-flex ps-3">
+                                                <div className="recovery-story d-flex">
                                                     <div className="">
                                                     <i className="fas fa-gamepad color fs-5"></i></div>
                                                     <div>
@@ -92,7 +92,7 @@ const About = () => {
                                                 </div>
                                             </Col>
                                             <Col xs={12} md={6} lg={6} className="p-2 p-md-0 p-lg-0 p-sm-2">
-                                                <div className="recovery-story d-flex ps-3">
+                                                <div className="recovery-story d-flex">
                                                     <div className="">
                                                     <i className="fas fa-wheelchair color fs-5"></i></div>
                                                     <div>

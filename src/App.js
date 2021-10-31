@@ -12,7 +12,6 @@ import AddServices from './Pages/AddServices/AddServices';
 import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
 import ManageOrders from './Pages/ManageOrders/ManageOrders';
 import MyOrder from './Pages/MyOrder/MyOrder';
-import About from './Pages/Homepage/About/About';
 import AboutUs from './Pages/AboutUs/AboutUs';
 
 
