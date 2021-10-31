@@ -1,72 +1,29 @@
-# Getting Started with Create React App
+# Website Name -- Minor Hotel
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Live Site Link -- [Minor Hotel](https://minor-hotel.web.app/)
 
-## Available Scripts
-
--Minor Hotels is an international hotel owner, operator and investor with more than 550 hotels in 55 countries across Asia Pacific, Middle East, Africa, the Indian Ocean, Europe and the Americas. The hotel group operates as a subsidiary of Minor International PCL, one of the largest hospitality and leisure companies in the Asia Pacific region. The group operates hotels under the brands of Anantara Hotels, Resorts & Spas, Avani Hotels & Resorts, NH Hotels, NH Collection, nhow Hotels, Tivoli Hotels & Resorts, Oaks Hotels & Resorts and Elewana Collection.
-
+# About Minor Hotel
+- MISSION: The mission of the Minor Hotel is to put hospitality services on the highest level in order to satisfy the demands and expectations of guests. Our aim is to make the Hotel Grand a place for encounters, business success, pleasant meetings and gala ceremonies.
 
 
-### `npm start`
+- GOALS : Goals are those activities and standards and organisation must successfully perform or achieve to effectively carry out its missions. A Goal is more specific than a mission; it requires a certain level of achievement that can be observed and measured.
+- Measurable goals encourage hotel employees to perform effectively while enabling management to monitor employee progress. Management can determine whether goals are being achieved or whether corrective action is necessary.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# website features
+- Single Page Application(single-page applications don't reload the entire page)
 
-### `npm test`
+- Fast and responsive
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- secure authentication systems using google sign in.
 
-### `npm run build`
+- Private Route Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Environment configuration 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- CRUD Operations
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Mongodb Database 
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![]()
