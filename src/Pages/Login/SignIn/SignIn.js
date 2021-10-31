@@ -2,9 +2,23 @@ import React from 'react';
 import './SignIn.css'
 import { Col, Row } from 'react-bootstrap';
 import useAuth from '../../../hooks/useAuth';
+import { useLocation, useHistory } from 'react-router-dom';
 
 const SignIn = () => {
-    const {signInUsingGoogle} = useAuth()
+    const {signInUsingGoogle, setUser, setIsLoading} = useAuth();
+    const location = useLocation();
+    const history = useHistory()
+    const redirect_uri = location.state?.from || '/home';
+
+    const googleLoginRedirect = () => {
+        signInUsingGoogle()
+        .then(result => {
+            setUser(result.user)
+            history.push(redirect_uri)
+        })
+        .finally(() => setIsLoading(false));
+    }
+
     return (
         <div>
             <div className="login-section align-items-center">
@@ -19,7 +33,7 @@ const SignIn = () => {
                     <Col xs={12} md={6} lg={3} className=" text-light signIn-info text-start p-5">
                         <h5 className="pt-3">SignIn via Google</h5>
                         <hr className="w-25 mb-4 signIn-hr2"/>
-                        <button onClick={signInUsingGoogle} className="px-5 py-2 border-0 fs-4 fw-bold">Google</button>
+                        <button onClick={googleLoginRedirect} className="px-5 py-2 border-0 fs-4 fw-bold">Google</button>
                     </Col>
                     <Col xs={12} md={6} lg={3} className="">
                     </Col>
