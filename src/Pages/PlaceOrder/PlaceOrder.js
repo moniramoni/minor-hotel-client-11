@@ -12,49 +12,26 @@ const PlaceOrder = () => {
     // console.log(singleService)
 
 
-    const { register, handleSubmit, reset, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
         data.status='pending';
         data.singleServiceDat={singleService};
         console.log(data);
 
-        // fetch('http://localhost:5000/myOrder',{
-        //     method:"POST",
-        //     headers:{"content-type":"application/json"},
-        //     body:JSON.stringify(data)
-        // })
+        fetch('https://mysterious-island-82371.herokuapp.com/myOrder',{
+            method:"POST",
+            headers:{"content-type":"application/json"},
+            body:JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then(result => console.log(result))
     };
 
-    // console.log(watch("example"));
-    
-
-    // const onSubmit = data => {
-    //     // const savedCart = getStoredCart();
-    //     // data.order = savedCart;
-
-    //     fetch('http://localhost:5000/orders', {
-    //         method: 'POST',
-    //         headers: {
-    //             'content-type': 'application/json'
-    //         },
-    //         body: JSON.stringify(data)
-    //     })
-    //         .then(res => res.json())
-    //         .then(result => {
-    //             if (result.insertedId) {
-    //                 alert('Order processed Successfully');
-    //                 // clearTheCart();
-    //                 reset();
-    //             }
-    //         })
-    // };
-
-
     useEffect(() => {
-        fetch(`http://localhost:5000/singleService/${serviceId}`)
+        fetch(`https://mysterious-island-82371.herokuapp.com/singleService/${serviceId}`)
         .then(res => res.json())
         .then(data => setSingleService(data));
-    },[])
+    },[serviceId])
 
     return (
         <div className="p-5">

@@ -10,6 +10,8 @@ import AuthProvider from './contexts/AuthProvider';
 // import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import AddServices from './Pages/AddServices/AddServices';
 import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
+import ManageOrders from './Pages/ManageOrders/ManageOrders';
+import MyOrder from './Pages/MyOrder/MyOrder';
 
 
 function App() {
@@ -30,6 +32,12 @@ function App() {
             </Route>
             <Route path="/addServices">
                 <AddServices></AddServices>
+            </Route>
+            <Route path="/manageOrders">
+                <ManageOrders></ManageOrders>
+            </Route>
+            <Route path="/myOrder">
+                <MyOrder></MyOrder>
             </Route>
             <Route path="/login">
                 <SignIn></SignIn>
