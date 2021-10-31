@@ -22,7 +22,7 @@ const MyOrder = () => {
     const handleDeleteMyOrders = (id) => {
         const proceed = window.confirm('Are you sure you want to delete')
         if(proceed){
-            fetch(`http://localhost:5000/deleteMyOrders/${id}`,{
+            fetch(`https://mysterious-island-82371.herokuapp.com/deleteMyOrders/${id}`,{
             method: "DELETE",
             headers: {"content-type": "application/json"}
         })

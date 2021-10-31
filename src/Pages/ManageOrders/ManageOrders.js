@@ -14,7 +14,7 @@ const ManageOrders = () => {
     const handleDeleteManageOrders = (id) => {
         const proceed = window.confirm('Are you sure you want to delete')
         if(proceed){
-            fetch(`http://localhost:5000/deleteManageOrders/${id}`,{
+            fetch(`https://mysterious-island-82371.herokuapp.com/deleteManageOrders/${id}`,{
             method: "DELETE",
             headers: {"content-type": "application/json"}
         })
@@ -40,7 +40,7 @@ const ManageOrders = () => {
         );
         updateStatus.status = "approved";
 
-        const uri = `http://localhost:5000/manageOrderUpdate/${id}`;
+        const uri = `https://mysterious-island-82371.herokuapp.com/manageOrderUpdate/${id}`;
         fetch(uri, {
             method: "PUT",
             headers: {
