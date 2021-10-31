@@ -18,7 +18,7 @@ const Header = () => {
         <>
         <div className="top-bar fluid align-items-center pb-2 pt-2 w-100">
             <Row className="fluid m-auto align-items-center container w-100 ">
-                <Col className=" d-flex justify-content-lg-start justify-content-md-start justify-content-sm-center justify-content-center" xs={12} md={6} lg={6}>                       
+                <Col className="d-none d-sm-none d-md-flex d-lg-flex d-flex justify-content-lg-start justify-content-md-start justify-content-sm-center justify-content-center" xs={12} md={6} lg={6}>                       
                     <ul className="footer-icon text-white d-flex justify-content-sm-center">
                         <li><i className="fas fa-phone"> 1111-2222-3333 </i></li>
                         <li><i className="fab fa-facebook"></i></li>
@@ -40,7 +40,7 @@ const Header = () => {
                 </Col>
             </Row>
         </div>
-        <Navbar bg="light" variant="dark" collapseOnSelect expand="lg" className="fluid header-navbar ">
+        <Navbar bg="light" variant="light" collapseOnSelect expand="lg" className="fluid header-navbar ">
             <Container>
             <Link to="/home">
                 <Navbar.Brand href="/home" className="d-flex">
@@ -51,7 +51,7 @@ const Header = () => {
                             className="w-100"
                             alt="React Bootstrap logo"
                         /> </Link>{' '}
-                        <h2 className="w-100 text-dark p-1">Minor Hotel</h2>
+                        <h2 className="w-100 logo text-dark p-1">Minor Hotel</h2>
                     </Navbar.Brand>
                     </Link>
                     <Navbar.Toggle />
@@ -60,18 +60,21 @@ const Header = () => {
                         <NavLink className="menu-text"
                             activeStyle={activeStyle} to="/home">Home
                         </NavLink>
-                        <NavLink className="menu-text"
+
+                        {user?.email && <>
+                            <NavLink className="menu-text"
                             activeStyle={activeStyle} to="/myOrder">My Order
                         </NavLink>
                         <NavLink className="menu-text"
                             activeStyle={activeStyle} to="/manageOrders">Manage Orders
                         </NavLink>
                         <NavLink className="menu-text" activeStyle={activeStyle} as={Link}to="/addServices">Add Service</NavLink>
+                        </>}
 
                         <NavLink
                         className="menu-text"
                         activeStyle={activeStyle}
-                         as={Link}to="/contact">Contact</NavLink>
+                         as={Link}to="/aboutUs">About Us</NavLink>
                         {/* {user?.email? 
                         <Button className="logout-btn mx-2" onClick={logOut} variant="">LogOut</Button>:
                             <Nav.Link

@@ -1,24 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Spinner } from 'react-bootstrap';
+import useAuth from '../../../hooks/useAuth';
 
 const Services = () => {
     const [services, setServices] = useState([])
-    const [isLoading, setIsLoading] = useState(true)
+    const {setIsLoading} = useAuth()
 
     useEffect(() => {
-        setIsLoading(true)
         fetch(`https://mysterious-island-82371.herokuapp.com/addServices`)
         .then(res => res.json())
         .then(result => setServices(result))
         setIsLoading(false)
-    }, [isLoading])
+    }, [])
 
-    if(isLoading){
-        return <Spinner animation="border" role="status">
-        <span className="visually-hidden">Loading...</span>
-      </Spinner>
-    }
 
     return (
         <div>
@@ -28,7 +22,7 @@ const Services = () => {
             <div className="m-auto mb-5">
                 <div className="row container  m-auto">
                     {services?.map((service) => (
-                        <div className="col-md-4" key= {service._id}>
+                        <div className="col-md-6 col-lg-4 col-12" key= {service._id}>
                             <div className="border mb-4">
                                 <div className="">
                                     <img className="w-100" src={service.image} alt="" />

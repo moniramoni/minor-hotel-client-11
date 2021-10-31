@@ -57,3 +57,14 @@
     margin-right: 5px;
 }
 
+.logo{
+    text-decoration: none;
+}
+.navbar-light .navbar-brand {
+    color: rgb(0 0 0 / 0%);
+}
+.navbar-light .navbar-brand:hover {
+    color: rgb(0 0 0 / 0%);
+}
+
+

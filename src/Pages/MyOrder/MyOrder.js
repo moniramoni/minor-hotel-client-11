@@ -7,7 +7,7 @@ const MyOrder = () => {
     const {user} = useAuth()
     const [myOrders, setMyOrders] = useState([])
     console.log(myOrders)
-    const [isDeleted, setIsDeleted] = useState({})
+    // const [isDeleted, setIsDeleted] = useState({})
 
 
     useEffect(() => {
@@ -15,24 +15,25 @@ const MyOrder = () => {
         .then(res => res.json())
         .then(result => setMyOrders(result))
 
-    }, [user.email, isDeleted])
+    }, [user.email, myOrders])
 
 
+    // myOrder Delete
     const handleDeleteMyOrders = (id) => {
-        fetch(`http://localhost:5000/deleteMyOrders/${id}`,{
+        const proceed = window.confirm('Are you sure you want to delete')
+        if(proceed){
+            fetch(`http://localhost:5000/deleteMyOrders/${id}`,{
             method: "DELETE",
             headers: {"content-type": "application/json"}
         })
         .then(res => res.json())
         .then(result => {
             if(result.deletedCount){
-                setIsDeleted(true);
-                alert('Are sure you want to Delete?')
-            }
-            else{
-                setIsDeleted(false);
+                
+                alert(' Delete Success')
             }
         })
+        }
         
         console.log(id)
     }
@@ -75,8 +76,8 @@ const MyOrder = () => {
                                     <h6 className="">Capacity: {order.singleServiceDat.singleService.category} Bed</h6>
                                     <h6 className="">Per Night: ${order.singleServiceDat.singleService.price}</h6>
                                     <h6 className="">Booked Status: {order.status}</h6>
-                                    <button onClick={() => handleDeleteMyOrders(order._id)}>Delete</button>
-                                    {/* <Link to={`/placeOrder/${order.singleServiceDat.singleService._id}`}><button>Delete</button></Link> */}
+
+                                    <button className="px-4 py-1 my-2" onClick={() => handleDeleteMyOrders(order._id)}>Delete</button>
                                 </div>
                             </div>
                         </div>
