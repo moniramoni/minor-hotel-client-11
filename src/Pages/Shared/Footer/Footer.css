@@ -4,8 +4,8 @@
 .footer-logo{
     -webkit-filter: invert(100%); 
     filter: invert(100%);
-    width: 40%;
-    height: 60%;
+    width: 30%;
+    height: 90%;
 }
 
 .footer-menu li{

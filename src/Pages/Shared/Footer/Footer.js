@@ -12,7 +12,7 @@ const Footer = () => {
                 <img
                     src="https://i.ibb.co/n0JNFyC/logo.png"
                     width="240"
-                    height="80"
+                    height="100"
                     className="d-inline-block align-top footer-logo"
                     alt="React Bootstrap logo"
                 />

@@ -63,21 +63,21 @@ const MyOrder = () => {
             <div className="m-auto mb-5">
                 <div className="row container  m-auto">
                     {myOrders?.map((order) => (
-                        <div className="col-lg-4 col-md-6 col-12" key= {order._id}>
+                        <div className="col-lg-4 col-md-6 col-12" key= {order?._id}>
                             <div className="border mb-4">
                                 <div className="">
-                                    <img className="w-100" src={order.singleServiceDat.singleService.image} alt="" />
+                                    <img className="w-100" src={order?.singleServiceDat?.singleService?.image} alt="" />
                                 </div>
                                 <div className="text-start border-bottom">
-                                    <h4 className="p-2 px-3">{order.singleServiceDat.singleService.title.slice(0, 23)}</h4>
-                                    <p className="p-2 px-3">{order.singleServiceDat.singleService.description.slice(0, 100)}...</p>
+                                    <h4 className="p-2 px-3">{order?.singleServiceDat?.singleService?.title?.slice(0, 23)}</h4>
+                                    <p className="p-2 px-3">{order?.singleServiceDat?.singleService?.description?.slice(0, 100)}...</p>
                                 </div>
                                 <div className="text-start p-3">
-                                    <h6 className="">Capacity: {order.singleServiceDat.singleService.category} Bed</h6>
-                                    <h6 className="">Per Night: ${order.singleServiceDat.singleService.price}</h6>
-                                    <h6 className="">Booked Status: {order.status}</h6>
+                                    <h6 className="">Capacity: {order?.singleServiceDat?.singleService?.category} Bed</h6>
+                                    <h6 className="">Per Night: ${order?.singleServiceDat?.singleService?.price}</h6>
+                                    <h6 className="">Booked Status: {order?.status}</h6>
 
-                                    <button className="px-4 py-1 my-2" onClick={() => handleDeleteMyOrders(order._id)}>Delete</button>
+                                    <button className="px-4 py-1 my-2" onClick={() => handleDeleteMyOrders(order?._id)}>Delete</button>
                                 </div>
                             </div>
                         </div>

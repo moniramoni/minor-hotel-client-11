@@ -13,6 +13,7 @@ const PlaceOrder = () => {
 
 
     const { register, handleSubmit, formState: { errors } } = useForm();
+    
     const onSubmit = data => {
         data.status='Pending';
         data.singleServiceDat={singleService};
@@ -36,7 +37,7 @@ const PlaceOrder = () => {
     return (
         <div className="p-5">
              <div className="bg-dark text-light">
-                <h3 className="fs-1 fw-bold text-center py-4">{singleService.title}</h3>
+                <h3 className="fs-1 fw-bold text-center py-4">{singleService?.title}</h3>
             </div>
             <Row className="p-2 w-md-50 w-lg-50 w-100 m-auto justify-content-center align-items-center">
                 <Col xs={12} md={6} lg={6} className="p-2 p-md-0 p-lg-0 p-sm-2">
@@ -44,7 +45,7 @@ const PlaceOrder = () => {
                         <div className="">
                             <i className="fas fa-bed fs-4 color "></i></div>
                         <div>
-                            <h6 className="fw-bold text-center text-lg-end text-md-end ps-1 fs-6"><span  className="fw-light fs-6 text-start">Capacity: </span>{singleService.category} Bed</h6>
+                            <h6 className="fw-bold text-center text-lg-end text-md-end ps-1 fs-6"><span  className="fw-light fs-6 text-start">Capacity: </span>{singleService?.category} Bed</h6>
                         </div> 
                     </div>
                 </Col>
@@ -53,7 +54,7 @@ const PlaceOrder = () => {
                         <div className="">
                         <i className="fas fa-hand-holding-usd color fs-4"></i></div>
                         <div>
-                            <h6 className="fw-bold text-center text-lg-end text-md-end ps-1 fs-6"><span  className="fw-light fs-6 text-start">Per Night: </span> ${singleService.price}</h6>
+                            <h6 className="fw-bold text-center text-lg-end text-md-end ps-1 fs-6"><span  className="fw-light fs-6 text-start">Per Night: </span> ${singleService?.price}</h6>
                         </div> 
                     </div>
                 </Col>
@@ -157,13 +158,13 @@ const PlaceOrder = () => {
                             {/* -------------column second part------- */}
                             <Col xs={12} md={12} lg={6} className="mt-md-5 pt-md-5 mt-lg-0 pt-lg-0 mt-sm-5 pt-sm-5 mt-5">
                                 <div className="pb-3">
-                                    <img className="w-100 rounded" src={singleService.image} alt="" />
+                                    <img className="w-100 rounded" src={singleService?.image} alt="" />
                                 </div>
                             </Col>
                         </Row>
                         <div className="pt-5">
                             <h3 className="fs-4 fw-bold text-center pt-3 pb-2">Description</h3>
-                            <p className="pb-3 fw-light text-center">{singleService.description}</p>
+                            <p className="pb-3 fw-light text-center">{singleService?.description}</p>
                         </div>
                     </Container>
                 </div>
@@ -173,15 +174,15 @@ const PlaceOrder = () => {
                 <h3 className="fs-4 fw-bold text-center pb-4">Place Information </h3>
                     <input 
                         className="w-75 my-2"
-                        defaultValue={user.displayName} {...register("name", { required: true })} 
+                        defaultValue={user?.displayName} {...register("name", { required: true })} 
                     />
-                    {errors.displayName && <span className="text-danger">This field is required</span>}
+                    {errors?.displayName && <span className="text-danger">This field is required</span>}
                     <br />
                     <input
                         className="w-75 my-2"
-                        defaultValue={user.email} {...register("email", { required: true })} 
+                        defaultValue={user?.email} {...register("email", { required: true })} 
                     />
-                    {errors.email && <span className="text-danger">This field is required</span>}
+                    {errors?.email && <span className="text-danger">This field is required</span>}
                     <br />
                     <input 
                         className="w-75 my-2"
@@ -192,7 +193,7 @@ const PlaceOrder = () => {
                         className="w-75 my-2"
                         placeholder="City" defaultValue="" {...register("city")} 
                     />
-                    {errors.email && <span className="text-danger">This field is required</span>}
+                    {errors?.email && <span className="text-danger">This field is required</span>}
                     <br />
                     <input 
                         className="w-75 my-2"

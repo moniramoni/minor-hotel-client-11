@@ -66,27 +66,27 @@ const ManageOrders = () => {
             <div className="m-auto mb-5 pt-5">
                 <div className="row container  m-auto">
                     {manageOrders?.map((manageOrder) => (
-                        <div className="col-lg-4 col-md-6 col-12" key= {manageOrder._id}>
+                        <div className="col-lg-4 col-md-6 col-12" key= {manageOrder?._id}>
                             <div className="border mb-4">
                                 <div className="">
-                                    <img className="w-100" src={manageOrder.singleServiceDat.singleService.image} alt="" />
+                                    <img className="w-100" src={manageOrder?.singleServiceDat?.singleService?.image} alt="" />
                                 </div>
                                 <div className="text-start border-bottom">
-                                    <h4 className="p-2 px-3">{manageOrder.singleServiceDat.singleService.title.slice(0, 23)}</h4>
-                                    <p className="p-2 px-3">{manageOrder.singleServiceDat.singleService.description.slice(0, 100)}...</p>
+                                    <h4 className="p-2 px-3">{manageOrder?.singleServiceDat?.singleService?.title?.slice(0, 23)}</h4>
+                                    <p className="p-2 px-3">{manageOrder?.singleServiceDat?.singleService?.description?.slice(0, 100)}...</p>
                                 </div>
                                 <div className="text-start p-3">
 
-                                    <h6 className="">Capacity: {manageOrder.singleServiceDat.singleService.category} Bed</h6>
+                                    <h6 className="">Capacity: {manageOrder?.singleServiceDat?.singleService?.category} Bed</h6>
 
-                                    <h6 className="">Per Night: ${manageOrder.singleServiceDat.singleService.price}</h6>
+                                    <h6 className="">Per Night: ${manageOrder?.singleServiceDat?.singleService?.price}</h6>
 
 
                                     {/* approve btn */}
-                                    <button onClick={() => handleUpdateManageOrders(manageOrder._id)} className="px-4 mx-1 py-1 my-2">{manageOrder.status}</button>
+                                    <button onClick={() => handleUpdateManageOrders(manageOrder?._id)} className="px-4 mx-1 py-1 my-2">{manageOrder?.status}</button>
 
                                     {/* delete btn */}
-                                    <button onClick={() => handleDeleteManageOrders(manageOrder._id)} className="px-4 py-1 my-2">Delete</button>
+                                    <button onClick={() => handleDeleteManageOrders(manageOrder?._id)} className="px-4 py-1 my-2">Delete</button>
                                 </div>
                             </div>
                         </div>

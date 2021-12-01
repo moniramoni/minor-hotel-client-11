@@ -22,19 +22,19 @@ const Services = () => {
             <div className="m-auto mb-5">
                 <div className="row container  m-auto">
                     {services?.map((service) => (
-                        <div className="col-md-6 col-lg-4 col-12" key= {service._id}>
+                        <div className="col-md-6 col-lg-4 col-12" key= {service?._id}>
                             <div className="border mb-4">
                                 <div className="">
-                                    <img className="w-100" src={service.image} alt="" />
+                                    <img className="w-100" src={service?.image} alt="" />
                                 </div>
                                 <div className="text-start border-bottom">
-                                    <h4 className="p-2 px-3">{service.title.slice(0, 23)}</h4>
-                                    <p className="p-2 px-3">{service.description.slice(0, 100)}...</p>
+                                    <h4 className="p-2 px-3">{service?.title?.slice(0, 23)}</h4>
+                                    <p className="p-2 px-3">{service?.description?.slice(0, 100)}...</p>
                                 </div>
                                 <div className="text-start p-3">
-                                    <h6 className="">Capacity: {service.category} Bed</h6>
-                                    <h6 className="">Per Night: ${service.price}</h6>
-                                    <Link to={`/placeOrder/${service._id}`}><button>Book Now</button></Link>
+                                    <h6 className="">Capacity: {service?.category} Bed</h6>
+                                    <h6 className="">Per Night: ${service?.price}</h6>
+                                    <Link to={`/placeOrder/${service?._id}`}><button>Book Now</button></Link>
                                 </div>
                             </div>
                         </div>
